@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body{
+    height: 100%;
+    width: 100%;
+}
+.kt{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.khungbao{
+    width: 60%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: content-box !important;
+    border: 500px solid black;
+    padding: 0;
+    z-index: 2; 
+}
+.khungbao> img{
+    width: 100%;
+    opacity: 0;
+    border-radius: 10px;
+}
+.content-wrap{
+    width: 60%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    height: 200px;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    padding: 0;
+    /* border-radius:10px;  */
+    background-image: url(../imgs/hinh-nen-windows-11-mac-dinh-5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+     animation: pushdown ease 2.5s forwards; 
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.7)
+}
+.content-wrap> img{
+    width: 100%;
+    padding: 0;
+    /* border-radius: 10px; */
+}
+.content{
+    position: absolute;
+    right: 0;
+    top:0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.content-heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    font-size: 18px;
+    color: #fff;
+}
+.content-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 250px;
+    height: 250px;
+    background-color: gray;
+    font-size: 150px;
+    line-height: 250px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+}
+.content-user{
+    color: white;
+    font-size: 50px;
+    padding: 16px;
+}
+.content-input> input{
+    padding: 8px;
+    border: none;
+    font-size: 16px;
+}
+.content-input> input:hover{
+    outline: none;
+}
+.content-input> button{
+    padding: 7px;
+    float: right;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.content-input> button:active{
+    background-color: #ccc;
+}
+.content-foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    padding: 16px;
+}
+.content-foot> div{
+    padding: 0px 8px;
+}
+@keyframes updown{
+    to{
+        transform: translate(-50%, -50%)
+    }
+}
+@keyframes pushdown{
+    to{
+        transform: translate(-50%, -150%);
+    }
+}
+.container{
+    position: fixed;
+    width: 60%;
+    background-image: url(../imgs/hinh-nen-windows-11-mac-dinh-7.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 3;
+    animation: updown ease 2.5s forwards; 
+}
+.foot-container{
+    position: absolute;
+    right: 0;
+    top:0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.content-app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    background-color: lightgray;
+    border-radius: 8px;
+    padding: 8px;
+    width: 200px;
+    height: 56px
+}
+.content-app> div+div{
+    z-index: 2;
+    margin-left: 8px;
+}
+.music-app{
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: rgb(241, 59, 59);
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+.face-app{
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    padding: 0;
+    text-align: center;
+    font-size: 28px;
+    line-height: 55px;
+    border-radius: 8px;
+    
+}
+.youtube-app{
+    width: 40px;
+    height: 40px;
+    color: red;
+    background-color: #fff;
+    border-radius: 8px;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+}
+/* .music-app:hover{
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 28px;
+    transition: linear 0.2s;
+}
+.face-app:hover {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    font-size: 36px;
+    line-height: 70px;
+    transition: linear 0.2s;
+    
+}
+.face-app:hover ~ *{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 28px;
+    transition: linear 0.2s;
+} 
+.youtube-app:hover{
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 32px;
+    transition: linear 0.2s;
+} */
+.music_app-view{
+    width: 60%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    height: 790px;
+    transform: translate(-50%, -55%);
+    z-index: 4;
+}

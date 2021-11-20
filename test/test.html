@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bai1/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    
+</head>
+<body>
+    <div class="kt"></div>
+    <div class="khungbao">
+        <img src="../imgs/hinh-nen-windows-11-mac-dinh-15.jpg" alt="">
+    </div>
+    <div class="content-wrap" id="wrap">
+        <!-- <img src="../imgs/hinh-nen-windows-11-mac-dinh-15.jpg" alt=""> -->  
+        <div class="content">
+            <div class="content-heading">
+                <div>TravelLab</div>    
+                <div>SinUp</div>
+            </div>
+            <div class="content-body">
+                <div class="logo">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="content-user">Decovery</div>
+                <div class="content-input">
+                    <input type="password" placeholder="Password" class="password">
+                    <button class="button-login"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="content-foot">
+                <div><i class="fas fa-wifi"></i></div>
+                <div><i class="fas fa-universal-access"></i></div>
+                <div><i class="fas fa-power-off"></i></div>
+            </div>
+         </div>
+        </div>    
+         <div class="container" id="container-wrap">
+            <div class="foot-container">
+                <div class="content-app">
+                    <div class="music-app common"><i class="fas fa-headphones"></i></div>
+                    <div class="face-app common"><i class="fab fa-facebook-f"></i></div>
+                    <div class="youtube-app common"><i class="fab fa-youtube"></i></div>
+                </div>
+            </div>
+         </div>
+    </div>
+    <div class="music_app-view">
+        <audio src="../audio/BƯỚC QUA NHAU - Vũ. (Official MV).mp3" controls>bước qua nhau-Vũ</audio>
+    </div>
+    <script>
+        var contain = document.querySelector('.khungbao');
+        var view = document.querySelector('.kt');
+        var heightView= view.offsetHeight;
+        var height= contain.offsetHeight;
+        var heightWarp = (heightView- height) / 2;
+        var khungbao = document.getElementsByClassName('khungbao');
+        var tren = document.getElementById('wrap');
+        tren.style.height= (height-998.9999)+"px";
+        var duoi = document.getElementById('container-wrap');
+        duoi.style.height= (height-998.9999)+"px";
+
+        var app = document.querySelectorAll('.common');
+        for( var i=0; i< app.length; i++){
+        app[1].addEventListener('mouseover',function (){   
+            app[0].style.width='50px'; 
+            app[0].style.height='50px';
+            app[0].style.lineHeight='50px';
+            app[0].style.fontSize='28px';
+            app[0].style.marginBottom='16px';
+            app[0].style.transition=' linear 0.17s'
+            app[1].style.width='60px'; 
+            app[1].style.height='60px';
+            app[1].style.lineHeight='70px';
+            app[1].style.fontSize='36px';
+            app[1].style.marginBottom='28px';
+            app[1].style.transition=' linear 0.17s'
+            app[2].style.width='50px'; 
+            app[2].style.height='50px';
+            app[2].style.lineHeight='50px';
+            app[2].style.fontSize='28px';
+            app[2].style.marginBottom='16px';
+            app[2].style.transition=' linear 0.17s'
+        })
+        app[0].addEventListener('mouseover',function (){   
+            app[0].style.width='60px'; 
+            app[0].style.height='60px';
+            app[0].style.lineHeight='60px';
+            app[0].style.fontSize='32px';
+            app[0].style.marginBottom='28px';
+            app[0].style.transition=' linear 0.17s'
+            app[1].style.width='50px'; 
+            app[1].style.height='50px';
+            app[1].style.lineHeight='70px';
+            app[1].style.fontSize='36px';
+            app[1].style.marginBottom='16px';
+            app[1].style.transition=' linear 0.17s'
+        })
+        app[2].addEventListener('mouseover',function (){   
+            app[2].style.width='60px'; 
+            app[2].style.height='60px';
+            app[2].style.lineHeight='60px';
+            app[2].style.fontSize='32px';
+            app[2].style.marginBottom='28px';
+            app[2].style.transition=' linear 0.17s'
+            app[1].style.width='50px'; 
+            app[1].style.height='50px';
+            app[1].style.lineHeight='70px';
+            app[1].style.fontSize='36px';
+            app[1].style.marginBottom='16px';
+            app[1].style.transition=' linear 0.17s'
+        })
+        }
+        app[1].addEventListener('mouseout',function (){   
+            app[0].style.width='40px'; 
+            app[0].style.height='40px';
+            app[0].style.lineHeight='40px';
+            app[0].style.fontSize='20px';
+            app[0].style.marginBottom='0px';
+            app[0].style.transition=' linear 0.17s'
+            app[1].style.width='40px'; 
+            app[1].style.height='40px';
+            app[1].style.lineHeight='40px';
+            app[1].style.fontSize='28px';
+            app[1].style.marginBottom='0px';
+            app[1].style.transition=' linear 0.17s'
+            app[2].style.width='40px'; 
+            app[2].style.height='40px';
+            app[2].style.lineHeight='40px';
+            app[2].style.fontSize='24px';
+            app[2].style.marginBottom='0px';
+            app[2].style.transition=' linear 0.17s'
+        })
+        app[0].addEventListener('mouseout',function (){   
+            app[0].style.width='40px'; 
+            app[0].style.height='40px';
+            app[0].style.lineHeight='40px';
+            app[0].style.fontSize='20px';
+            app[0].style.marginBottom='0px';
+            app[0].style.transition=' linear 0.17s'
+            app[1].style.width='40px'; 
+            app[1].style.height='40px';
+            app[1].style.lineHeight='55px';
+            app[1].style.fontSize='28px';
+            app[1].style.marginBottom='0px';
+            app[1].style.transition=' linear 0.17s'
+        })
+        app[2].addEventListener('mouseout',function (){   
+            app[1].style.width='40px'; 
+            app[1].style.height='40px';
+            app[1].style.lineHeight='55px';
+            app[1].style.fontSize='28px';
+            app[1].style.marginBottom='0px';
+            app[1].style.transition=' linear 0.17s'
+            app[2].style.width='40px'; 
+            app[2].style.height='40px';
+            app[2].style.lineHeight='40px';
+            app[2].style.fontSize='24px';
+            app[2].style.marginBottom='0px';
+            app[2].style.transition=' linear 0.17s'
+        })
+    </script>
+    
+</body>
+</html>
